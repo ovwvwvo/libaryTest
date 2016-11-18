@@ -41,5 +41,5 @@ captures/
 # Keystore files
 *.jks
 
-common/
-JLibary/
+/common/
+/JLibary/
