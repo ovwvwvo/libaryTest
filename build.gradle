@@ -17,15 +17,28 @@ allprojects {
     repositories {
         jcenter()
     }
+    ext {
+        appCompileSdkVersion = 25
+        appBuildToolVersion = '24.0.3'
+
+        appMinSdkVersion = 16
+        appTargetSdkVersion = 24
+
+        appVersionCode = 4
+        appVersionName = "0.1.2"
+
+        appSupportLibVersion = '25.0.1'
+
+        googleServerVersion ='9.8.0'
+
+        butterknifeVersion='8.4.0'
+
+        retrofitVersion='2.1.0'
+
+        rxVersion='1.1.0'
+    }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-ext {
-    compileSdkVersion = 24
-    buildToolsVersion = "24.0.2"
-    minSdkVersion = 16
-    targetSdkVersion = 24
 }
