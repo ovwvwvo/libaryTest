@@ -23,6 +23,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':common')
+    compile project(':JLibary')
 
     testCompile 'junit:junit:4.12'
 
@@ -30,15 +31,18 @@ dependencies {
     compile "com.google.android.gms:play-services-auth:$googleServerVersion"
     compile "com.google.android.gms:play-services-gcm:$googleServerVersion"
 
-    compile "com.android.support:appcompat-v7:$appSupportLibVersion"
-    compile "com.android.support:recyclerview-v7:$appSupportLibVersion"
-    compile "com.android.support:design:$appSupportLibVersion"
-
     apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     compile "com.jakewharton:butterknife:$butterknifeVersion"
 
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+
+    compile "io.reactivex:rxandroid:$rxVersion"
+    compile "io.reactivex:rxjava:$rxVersion"
+
     compile 'com.umeng.analytics:analytics:latest.integration'
 
+    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    compile "com.jakewharton:butterknife:$butterknifeVersion"
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
     compile 'com.larswerkman:HoloColorPicker:1.5'
     compile 'com.afollestad.material-dialogs:commons:0.9.0.2'
