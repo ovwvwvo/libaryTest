@@ -1,7 +1,10 @@
 package com.ovwvwvo.jlibarytest;
 
+import android.app.ProgressDialog;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -16,12 +19,18 @@ public class MainActivity extends AppCompatActivity {
 
     AddWordOutsideLinearLayout layout;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("sssss");
+
+        progressDialog.show();
     }
 
     @Override
@@ -39,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         AddWordFrame addWordFrame = new AddWordFrame(this);
         layout = addWordFrame.getLayout();
-        layout.setText("asdsadfsda\n jiayaguang\n加压刮刮khhhjy撒旦飞洒发送的是的发生的方式分 是否对萨达");
+        layout.setText("asdsadfsda\n ovwvwvo\n加压刮刮khhhjy撒旦飞洒发送的是的发生的方式分 是否对萨达");
 
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override

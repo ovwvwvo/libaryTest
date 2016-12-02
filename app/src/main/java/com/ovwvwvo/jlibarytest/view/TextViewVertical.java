@@ -14,7 +14,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 /**
- * Created by guang on 16/9/24.
+ * Created by ovwvwvo on 16/9/24.
  */
 
 public class TextViewVertical extends TextView {
