@@ -29,7 +29,7 @@ allprojects {
 
         appSupportLibVersion = '25.0.1'
 
-        googleServerVersion ='9.8.0'
+        googleServerVersion ='10.0.0'
 
         butterknifeVersion='8.4.0'
 
