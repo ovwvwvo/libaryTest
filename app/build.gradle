@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
 android {
-
     compileSdkVersion appCompileSdkVersion
     buildToolsVersion appBuildToolVersion
 
@@ -26,7 +25,7 @@ dependencies {
     compile project(':common')
     compile project(':JLibary')
 
-    testCompile 'junit:junit:4.12'
+    testCompile "junit:junit:$appJunitVersion"
 
     compile "com.google.android.gms:play-services-ads:$googleServerVersion"
     compile "com.google.android.gms:play-services-auth:$googleServerVersion"
