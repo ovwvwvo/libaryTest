@@ -25,6 +25,8 @@ dependencies {
     compile project(':common')
     compile project(':JLibary')
     compile project(':ad')
+    compile project(':share')
+    compile project(':javatest')
 
     testCompile "junit:junit:$appJunitVersion"
 
