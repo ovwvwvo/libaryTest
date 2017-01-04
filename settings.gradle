@@ -1,1 +1,1 @@
-include ':app', ':JLibary', ':common', ':javalib','adlibrary'
+include ':app', ':JLibary', ':common', ':adLibary'
