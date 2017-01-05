@@ -1,0 +1,3 @@
+[submodule "shareLibary"]
+	path = shareLibary
+	url = git@github.com:ovwvwvo/shareLibary.git
