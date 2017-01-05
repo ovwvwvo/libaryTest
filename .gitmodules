@@ -1,3 +1,6 @@
 [submodule "shareLibary"]
 	path = shareLibary
 	url = git@github.com:ovwvwvo/shareLibary.git
+[submodule "ad"]
+	path = ad
+	url = git@github.com:ovwvwvo/adLibary.git
