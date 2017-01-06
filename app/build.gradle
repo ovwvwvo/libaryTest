@@ -26,7 +26,6 @@ dependencies {
     compile project(':shareLibary')
     compile project(':JLibary')
     compile project(':ad')
-    compile project(':javatest')
 
     testCompile "junit:junit:$appJunitVersion"
 

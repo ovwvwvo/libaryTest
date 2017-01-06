@@ -6,10 +6,6 @@
 	path = common
 	url = git@github.com:ovwvwvo/common.git
 
-[submodule "javatest"]
-	path = javatest
-	url =  git@github.com:ovwvwvo/libaryTest.git
-
 [submodule "JLibary"]
 	path = JLibary
 	url =  git@github.com:ovwvwvo/JLibary.git
