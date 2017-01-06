@@ -1,14 +1,14 @@
-[submodule "ad"]
-	path = ad
+[submodule "adLibary"]
+	path = adLibary
 	url = git@github.com:ovwvwvo/adLibary.git
 
 [submodule "common"]
 	path = common
 	url = git@github.com:ovwvwvo/common.git
 
-[submodule "JLibary"]
-	path = JLibary
-	url =  git@github.com:ovwvwvo/JLibary.git
+[submodule "jLibary"]
+	path = jLibary
+	url =  git@github.com:ovwvwvo/jLibary.git
 
 [submodule "shareLibary"]
 	path = shareLibary
