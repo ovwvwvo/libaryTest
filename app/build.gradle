@@ -43,7 +43,7 @@ dependencies {
     compile "io.reactivex:rxandroid:$rxVersion"
     compile "io.reactivex:rxjava:$rxVersion"
 
-    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.code.gson:gson:2.7'
 
     compile 'com.umeng.analytics:analytics:latest.integration'
 

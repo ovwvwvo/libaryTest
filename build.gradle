@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8' //butterknife
     }
 }
@@ -19,7 +19,7 @@ allprojects {
     }
     ext {
         appCompileSdkVersion = 25
-        appBuildToolVersion = '24.0.3'
+        appBuildToolVersion = '25.0.2'
 
         appMinSdkVersion = 16
         appTargetSdkVersion = 24
@@ -31,7 +31,7 @@ allprojects {
 
         appJunitVersion='4.12'
 
-        googleServerVersion ='10.0.1'
+        googleServerVersion ='10.2.0'
 
         butterknifeVersion='8.4.0'
 
