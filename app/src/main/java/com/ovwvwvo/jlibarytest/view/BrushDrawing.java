@@ -12,8 +12,8 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 
+import com.ovwvwvo.jkit.log.LogUtil;
 import com.ovwvwvo.jlibarytest.R;
-import com.ovwvwvo.jlibrary.utils.LogUtil;
 
 import java.util.ArrayList;
 import java.util.List;

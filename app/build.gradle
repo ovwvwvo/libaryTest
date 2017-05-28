@@ -24,7 +24,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':common')
     compile project(':shareLibary')
-    compile project(':jLibary')
+    compile project(':jkit')
     compile project(':adLibary')
 
     testCompile "junit:junit:$appJunitVersion"

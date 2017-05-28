@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 
 import com.funny.addworddemo.view.AddWordFrame;
 import com.funny.addworddemo.view.AddWordOutsideLinearLayout;
-import com.ovwvwvo.jlibrary.utils.LogUtil;
+import com.ovwvwvo.jkit.log.LogUtil;
 
 public class MainActivity extends AppCompatActivity {
 
