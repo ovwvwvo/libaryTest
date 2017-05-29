@@ -1,4 +1,4 @@
-package com.ovwvwvo.jlibarytest.view;
+package com.ovwvwvo.libarytest.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -12,8 +12,7 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 
-import com.ovwvwvo.jkit.log.LogUtil;
-import com.ovwvwvo.jlibarytest.R;
+import com.ovwvwvo.libarytest.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,7 +97,6 @@ public class BrushDrawing extends View {
         mVelocityTracker.computeCurrentVelocity(10);
         float xVelocity = mVelocityTracker.getXVelocity();
         float vx = mVelocityTracker.getXVelocity();
-        LogUtil.i("getXVelocity" + vx);
 
         int action = event.getAction();
         switch (action) {
@@ -110,9 +108,7 @@ public class BrushDrawing extends View {
                 float x = event.getX();
                 float y = event.getY();
                 float dx = x - lastPointF.x, dy = y - lastPointF.y;
-                LogUtil.i("" + i);
                 if (dx * dx + dy * dy > 100) {
-                    LogUtil.i("hahhah" + i);
                     mPositions.add(new Vector2(x - mBitmapBrushDimensions.x / 2,
                             y - mBitmapBrushDimensions.y / 2));
                     lastPointF.set(x, y);

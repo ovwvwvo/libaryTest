@@ -6,7 +6,7 @@ android {
     buildToolsVersion appBuildToolVersion
 
     defaultConfig {
-        applicationId "com.ovwvwvo.jlibarytest"
+        applicationId "com.ovwvwvo.libarytest"
         minSdkVersion appMinSdkVersion
         targetSdkVersion appTargetSdkVersion
         versionCode appVersionCode
@@ -18,6 +18,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -25,7 +28,6 @@ dependencies {
     compile project(':common')
     compile project(':shareLibary')
     compile project(':jkit')
-    compile project(':adLibary')
 
     testCompile "junit:junit:$appJunitVersion"
 
@@ -39,9 +41,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
     compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-
-    compile "io.reactivex:rxandroid:$rxVersion"
-    compile "io.reactivex:rxjava:$rxVersion"
 
     compile 'com.google.code.gson:gson:2.7'
 

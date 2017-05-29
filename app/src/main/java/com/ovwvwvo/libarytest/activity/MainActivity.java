@@ -1,4 +1,10 @@
-package com.ovwvwvo.jlibarytest;
+/*
+ *
+ *  * Created by rawer.
+ *
+ */
+
+package com.ovwvwvo.libarytest.activity;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
@@ -13,7 +19,7 @@ import android.widget.LinearLayout;
 
 import com.funny.addworddemo.view.AddWordFrame;
 import com.funny.addworddemo.view.AddWordOutsideLinearLayout;
-import com.ovwvwvo.jkit.log.LogUtil;
+import com.ovwvwvo.libarytest.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,13 +59,11 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtil.i(layout + "  11111");
                 if (i % 2 == 0)
                     layout.setTextViewOrientation(LinearLayout.VERTICAL);
                 else
                     layout.setTextViewOrientation(LinearLayout.HORIZONTAL);
                 i++;
-                LogUtil.i(layout + "  22222");
             }
         });
     }
