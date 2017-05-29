@@ -24,8 +24,8 @@ allprojects {
         appMinSdkVersion = 16
         appTargetSdkVersion = 24
 
-        appVersionCode = 6
-        appVersionName = "0.1.3"
+        appVersionCode = 8
+        appVersionName = "0.1.4"
 
         appSupportLibVersion = '25.3.1'
 
