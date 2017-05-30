@@ -15,15 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
-import android.widget.LinearLayout;
 
-import com.funny.addworddemo.view.AddWordFrame;
-import com.funny.addworddemo.view.AddWordOutsideLinearLayout;
 import com.ovwvwvo.libarytest.R;
 
 public class MainActivity extends AppCompatActivity {
-
-    AddWordOutsideLinearLayout layout;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -52,20 +47,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        AddWordFrame addWordFrame = new AddWordFrame(this);
-        layout = addWordFrame.getLayout();
-        layout.setText("asdsadfsda\n ovwvwvo\n加压刮刮khhhjy撒旦飞洒发送的是的发生的方式分 是否对萨达");
-
-        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (i % 2 == 0)
-                    layout.setTextViewOrientation(LinearLayout.VERTICAL);
-                else
-                    layout.setTextViewOrientation(LinearLayout.HORIZONTAL);
-                i++;
-            }
-        });
     }
 
     public static Bitmap convertViewToBitmap(View view) {

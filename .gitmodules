@@ -1,11 +1,11 @@
 [submodule "common"]
 	path = common
-	url = git@github.com:ovwvwvo/common.git
+	url = git@github.com:rawer0/common.git
 
 [submodule "jkit"]
 	path = jkit
-	url =  git@github.com:ovwvwvo/jkit.git
+	url =  git@github.com:rawer0/jkit.git
 
 [submodule "shareLibary"]
 	path = shareLibary
-	url = git@github.com:ovwvwvo/shareLibary.git
+	url = git@github.com:rawer0/shareLibary.git

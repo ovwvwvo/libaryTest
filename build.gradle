@@ -21,11 +21,11 @@ allprojects {
         appCompileSdkVersion = 25
         appBuildToolVersion = '25.0.2'
 
-        appMinSdkVersion = 16
+        appMinSdkVersion = 15
         appTargetSdkVersion = 24
 
-        appVersionCode = 8
-        appVersionName = "0.1.4"
+        appVersionCode = 10
+        appVersionName = "0.1.5"
 
         appSupportLibVersion = '25.3.1'
 
