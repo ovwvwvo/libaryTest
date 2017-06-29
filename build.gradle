@@ -24,14 +24,11 @@ allprojects {
         appMinSdkVersion = 15
         appTargetSdkVersion = 24
 
-        appVersionCode = 12
-        appVersionName = "0.1.6"
-
         appSupportLibVersion = '25.3.1'
 
         appJunitVersion='4.12'
 
-        googleServerVersion ='10.2.6'
+        googleServerVersion ='11.0.0'
 
         butterknifeVersion='8.4.0'
 
