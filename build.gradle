@@ -18,11 +18,11 @@ allprojects {
         jcenter()
     }
     ext {
-        appCompileSdkVersion = 25
-        appBuildToolVersion = '25.0.2'
+        appCompileSdkVersion = 26
+        appBuildToolVersion = '26.0.1'
 
         appMinSdkVersion = 15
-        appTargetSdkVersion = 24
+        appTargetSdkVersion = 26
 
         appSupportLibVersion = '25.3.1'
 
