@@ -9,3 +9,6 @@
 [submodule "share"]
 	path = share
 	url = git@github.com:rawer0/share.git
+[submodule "core"]
+	path = core
+	url = ./core/
