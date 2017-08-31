@@ -1,4 +1,3 @@
-
 def getReleaseTime() {
     return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
 }
@@ -24,5 +23,5 @@ def gitVersionName() {
 ext {
     appVersionCode = this.gitVersionCode()
     appVersionName = this.gitVersionName()
-    time=this.getReleaseTime()
+    time = this.getReleaseTime()
 }
