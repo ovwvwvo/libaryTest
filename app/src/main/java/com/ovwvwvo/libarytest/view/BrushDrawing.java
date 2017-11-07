@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ovwvwvo on 16/8/26
+ * Created by rawer on 16/8/26
  */
 public class BrushDrawing extends View {
 

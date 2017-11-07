@@ -15,7 +15,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
-
 import com.ovwvwvo.libarytest.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,14 +23,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.ovwvwvo.libarytest.R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("sssss");
-
-        progressDialog.show();
+//        showProgressDialog();
     }
 
     @Override
@@ -40,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
-
-    int i = 0;
 
     @Override
     protected void onStart() {
@@ -56,4 +49,9 @@ public class MainActivity extends AppCompatActivity {
         return view.getDrawingCache();
     }
 
+    private void showProgressDialog() {
+        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("sssss");
+        progressDialog.show();
+    }
 }

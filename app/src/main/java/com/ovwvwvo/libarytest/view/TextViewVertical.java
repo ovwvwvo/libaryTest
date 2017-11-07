@@ -9,15 +9,15 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.widget.TextView;
 
 /**
- * Created by ovwvwvo on 16/9/24.
+ * Created by rawer on 16/9/24.
  */
 
-public class TextViewVertical extends TextView {
+public class TextViewVertical extends AppCompatTextView {
     public static final int LAYOUT_CHANGED = 1;
     private Paint paint;
     private int mTextPosx = 0;// x坐标
