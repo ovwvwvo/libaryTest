@@ -41,6 +41,6 @@ dependencies {
     implementation project(path: ':share', configuration: 'default')
 
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.google.code.gson:gson:2.8.0'
 }
