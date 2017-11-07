@@ -24,17 +24,5 @@ allprojects {
 
         appMinSdkVersion = 16
         appTargetSdkVersion = 26
-
-        appSupportLibVersion = '26.1.0'
-
-        appJunitVersion='4.12'
-
-        googleServerVersion ='11.0.0'
-
-        butterknifeVersion='8.8.1'
-
-        retrofitVersion='2.1.0'
-
-        rxVersion='1.2.1'
     }
 }

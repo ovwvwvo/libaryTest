@@ -1,16 +1,18 @@
-def getReleaseTime() {
+static def getReleaseTime() {
     return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
 }
 
-def gitVersionCode() {
+static def gitVersionCode() {
     def cmd = 'git rev-list HEAD  --count'
     return cmd.execute().text.trim().toInteger()
 }
 
-def gitVersionName() {
+static def gitVersionName() {
     def cmd = 'git describe --tags'
     def versionName = cmd.execute().text.trim()
-
+    if (!versionName) {
+        versionName = "git rev-parse --short HEAD".execute().text.trim()
+    }
     def pattern = "-(\\d+)-g"
     def matcher = versionName =~ pattern
 
@@ -21,7 +23,7 @@ def gitVersionName() {
 }
 
 ext {
-    appVersionCode = this.gitVersionCode()
-    appVersionName = this.gitVersionName()
-    time = this.getReleaseTime()
+    appVersionCode = gitVersionCode()
+    appVersionName = gitVersionName()
+    time = getReleaseTime()
 }
