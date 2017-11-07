@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 apply from: 'util.gradle'
 
 android {
@@ -31,43 +30,41 @@ android {
     }
 
     applicationVariants.all { variant ->
-        variant.outputs.each { output ->
+        variant.outputs.all { output ->
             def fileName = output.outputFile.name;
             if (fileName != null && fileName.endsWith('.apk')) {
                 fileName = fileName.replace("app", "${variant.versionName}-${variant.versionCode}")
-                output.outputFile = new File(output.outputFile.parent, fileName)
+                outputFileName = new File(output.outputFile.parent, fileName)
             }
         }
     }
 }
-
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':common')
-    compile project(':jkit')
-    compile project(':share')
-    compile project(':core')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':common', configuration: 'default')
+    implementation project(path: ':share', configuration: 'default')
 
-    testCompile "junit:junit:$appJunitVersion"
+    testCompile 'junit:junit:4.12'
+    implementation 'com.google.android.gms:play-services-ads:11.4.2'
+    implementation 'com.google.android.gms:play-services-auth:11.4.2'
+    implementation 'com.google.android.gms:play-services-gcm:11.4.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+    implementation 'com.larswerkman:HoloColorPicker:1.5'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.0.2'
+//    implementation 'com.jinguangyue.addwordlib:addwordLib:1.0.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.pnikosis:materialish-progress:1.1'
 
-    compile "com.google.android.gms:play-services-ads:$googleServerVersion"
-    compile "com.google.android.gms:play-services-auth:$googleServerVersion"
-    compile "com.google.android.gms:play-services-gcm:$googleServerVersion"
-
-    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
-    compile "com.jakewharton:butterknife:$butterknifeVersion"
-
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-
-    compile 'com.google.code.gson:gson:2.7'
-
-    compile 'com.umeng.analytics:analytics:latest.integration'
-
-    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
-    compile 'com.larswerkman:HoloColorPicker:1.5'
-
-//    compile 'com.afollestad.material-dialogs:commons:0.9.0.2'
-//    compile 'com.jinguangyue.addwordlib:addwordLib:1.0.0'
 }

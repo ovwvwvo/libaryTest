@@ -1,10 +1,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8' //butterknife
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
@@ -16,21 +16,22 @@ plugins {
 allprojects {
     repositories {
         jcenter()
+        google()
     }
     ext {
         appCompileSdkVersion = 26
-        appBuildToolVersion = '26.0.1'
+        appBuildToolVersion = '26.0.2'
 
-        appMinSdkVersion = 15
+        appMinSdkVersion = 16
         appTargetSdkVersion = 26
 
-        appSupportLibVersion = '25.3.1'
+        appSupportLibVersion = '26.1.0'
 
         appJunitVersion='4.12'
 
         googleServerVersion ='11.0.0'
 
-        butterknifeVersion='8.4.0'
+        butterknifeVersion='8.8.1'
 
         retrofitVersion='2.1.0'
 
