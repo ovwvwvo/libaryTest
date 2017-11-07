@@ -2,13 +2,6 @@
 	path = common
 	url = git@github.com:rawer0/common.git
 
-[submodule "jkit"]
-	path = jkit
-	url =  git@github.com:rawer0/jkit.git
-
 [submodule "share"]
 	path = share
 	url = git@github.com:rawer0/share.git
-[submodule "core"]
-	path = core
-	url = ./core/
