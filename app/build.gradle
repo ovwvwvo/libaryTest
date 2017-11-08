@@ -37,8 +37,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(path: ':common')
-    compile project(path: ':share')
+    implementation project(path: ':common')
+    implementation project(path: ':share')
 
     implementation 'com.android.support:appcompat-v7:26.1.0'
 
