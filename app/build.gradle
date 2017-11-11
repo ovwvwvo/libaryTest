@@ -13,6 +13,12 @@ android {
         versionName appVersionName
     }
 
+    //开启 Java-8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -26,10 +32,9 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            def fileName = output.outputFile.name;
-            if (fileName != null && fileName.endsWith('.apk')) {
-                fileName = fileName.replace("app", "${variant.versionName}-${variant.versionCode}")
-                outputFileName = new File(output.outputFile.parent, fileName)
+            outputFileName = output.outputFile.name;
+            if (outputFileName != null && outputFileName.endsWith('.apk')) {
+                outputFileName = outputFileName.replace("app", "${variant.versionName}-${variant.versionCode}")
             }
         }
     }
