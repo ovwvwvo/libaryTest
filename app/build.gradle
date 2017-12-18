@@ -32,7 +32,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            outputFileName = output.outputFile.name;
+            outputFileName = output.outputFile.name
             if (outputFileName != null && outputFileName.endsWith('.apk')) {
                 outputFileName = outputFileName.replace("app", "${variant.versionName}-${variant.versionCode}")
             }
